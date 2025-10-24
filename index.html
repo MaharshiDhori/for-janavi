@@ -45,10 +45,33 @@
     font-style: italic;
     color: #aaa;
   }
+  /* Button styling */
+  .btn {
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    background-color: #ff6699;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+    transition: 0.3s;
+  }
+  .btn:hover { background-color: #ff99cc; }
+
+  /* Hide letter content initially */
+  #letterContent {
+    display: none;
+  }
 </style>
 </head>
 <body>
-  <h1>💌 For My Forever Girl — Janavi 💌</h1>
+
+<h1>💌 For My Forever Girl — Janavi 💌</h1>
+
+<button class="btn" onclick="showLetter()">Open Your Letter 💖</button>
+
+<div id="letterContent">
   <p>Happy Birthday, my love! 🎂  
   I built this little corner of the internet just for you — because every piece of our journey deserves to be remembered forever. 💫</p>
 
@@ -88,6 +111,13 @@
     Always yours,<br>
     <strong>Maharshi</strong></p>
   </div>
+</div>
+
+<script>
+  function showLetter() {
+    document.getElementById('letterContent').style.display = 'block';
+  }
+</script>
+
 </body>
 </html>
-
